@@ -1,0 +1,109 @@
+/* Selector {property:value;} */
+details {
+  margin: 5px;
+  font-family: Verdana;
+}
+
+.header-text {
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+}
+
+.header-text:active {
+  /* pseudo-class */
+  color: yellow;
+}
+
+#header-1 {
+  font-variant: small-caps;
+}
+
+#header-1::first-letter {
+  /* pseudo-element */
+  font-size: 45px;
+  color: green;
+}
+
+.position-demo {
+  height: 400px;
+  width: 500px;
+  background-color: black;
+  margin-left: 50px;
+  position: relative;
+  /* left: 50px; */
+}
+
+.position-demo-child {
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+}
+
+.fixed {
+  background-color: chartreuse;
+  position: fixed;
+  left: 10px;
+}
+
+.absolute {
+  background-color: beige;
+  position: absolute;
+  left: 250px;
+  top: 250px;
+}
+
+.sticky {
+  position: sticky;
+  top: 20px;
+  left: 20px;
+}
+
+.flexbox-demo {
+  margin-top: 10px;
+  padding: 5px;
+  height: 400px;
+  width: 80%;
+  background-color: black;
+  margin-left: 50px;
+  border: solid 10px yellowgreen;
+  box-sizing: border-box;
+  /* default => content + padding + border != width & height */
+  /* border-box => content + padding + border == width & height */
+  display: flex;
+  flex-direction: row; /* sumbu utama => row(kiri-kanan) */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flexbox-demo-child {
+  height: 50px;
+  width: 50px;
+  border: solid 2px grey;
+  background-color: crimson;
+  text-align: center;
+}
+
+.one {
+  order: 1;
+}
+
+.two {
+  order: 2;
+}
+
+.three {
+  order: -1;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
+.custom-style {
+  background-color: black;
+}
+
+.custom-style:hover {
+  background-color: black;
+}
